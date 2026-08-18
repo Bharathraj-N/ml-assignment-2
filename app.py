@@ -109,7 +109,7 @@ def main():
     if uploaded_file is not None:
         data = pd.read_csv(uploaded_file)
         st.subheader("Uploaded Data Preview")
-        st.dataframe(data.head(10), use_container_width=True)
+        st.dataframe(data.head(10), width='stretch')
 
         if 'target' not in data.columns:
             st.error("CSV must contain a 'target' column for evaluation.")
@@ -167,7 +167,7 @@ def main():
             comparison_df.index.name = 'Model'
             st.dataframe(
                 comparison_df.style.highlight_max(axis=0, color='lightgreen'),
-                use_container_width=True
+                width='stretch'
             )
 
             st.markdown("#### Accuracy Comparison")
@@ -205,7 +205,7 @@ def main():
         comparison_df.index.name = 'Model'
         st.dataframe(
             comparison_df.style.highlight_max(axis=0, color='lightgreen'),
-            use_container_width=True
+            width='stretch'
         )
 
         st.markdown("---")

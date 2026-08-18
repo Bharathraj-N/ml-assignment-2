@@ -36,7 +36,7 @@ The goal of this project is to build a **binary classification system** that pre
 
 ## Live Streamlit App
 
-[Streamlit App](https://YOUR_APP_URL.streamlit.app)
+[Streamlit App](https://bharathraj-n-ml-assignment-2.streamlit.app)
 
 ## Models Used
 
